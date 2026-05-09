@@ -1,0 +1,35 @@
+{
+    "subject_verification": {
+        "status": "PASS",
+        "confidence": 0.95,
+        "reason": "The images clearly depict a real fire extinguisher with legible labels, inspection details, and a real-world background. It is not a screenshot, stock photo, unrelated object, or AI-generated image, and the image quality is good."
+    },
+    "refill_status": {
+        "status": "PASS",
+        "confidence": 1.0,
+        "refill_date": "20/04/2026",
+        "due_date": "20/04/2027",
+        "reason": "The refilling due date 20/04/2027 is after the current year 2026, indicating the extinguisher is still valid. The pressure gauge is also in the green zone."
+    },
+    "pressure_gauge": {
+        "status": "PASS",
+        "confidence": 1.0,
+        "reason": "The pressure gauge exists and is clearly visible. The needle is visible and lies within the green operational zone. There are no visible signs of physical damage or tampering with the gauge or the extinguisher."
+    },
+    "tamper_seal": {
+        "status": "PASS",
+        "confidence": 0.9,
+        "reason": "Safety pin is present, the tamper seal exists and is unbroken, indicating the extinguisher has not been discharged or tampered with."
+    },
+    "serial_number_check": {
+        "status": "FAIL",
+        "confidence": 0.95,
+        "reason": "Duplicate serial number found: 1615"
+    },
+    "final_verdict": "REJECT",
+    "usage": {
+        "model": "gemini-2.5-flash",
+        "api_calls": 5,
+        "estimated_tokens": 371
+    }
+}
