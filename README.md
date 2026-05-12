@@ -165,7 +165,7 @@ before Gemini inference.
 ## Clone Repository
 
 ```bash
-git clone https://github.com/AbhaySaini05/fire-safety-validation-system.git
+git clone https://github.com/AbhaySaini05/fire-extinguisher-validation-frontend.git
 cd fire_safety_pipeline
 ```
 
