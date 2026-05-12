@@ -7,6 +7,8 @@ Extract the serial number from the fire extinguisher body label.
 
 If serial number is unreadable, return UNCERTAIN.
 
+If serial number is not present on the fire extinguisher, return fail.
+
 Return ONLY valid JSON:
 
 {

@@ -13,6 +13,7 @@ def load_database():
         return json.load(f)
 
 
+
 def save_database(data):
 
     with open(DB_FILE, "w") as f:

@@ -2,7 +2,7 @@ from app.checks.subject_check import run_subject_check
 from app.checks.refill_check import run_refill_check
 from app.checks.gauge_check import run_gauge_check
 from app.checks.seal_check import run_seal_check
-from app.checks.serial_check import run_serial_check
+from app.checks.company_serial_check import run_company_serial_check
 
 from app.utils.gemini_client import usage_stats
 
@@ -29,7 +29,7 @@ def run_pipeline(images):
 
     print("[INFO] Running serial number check...")
 
-    report["serial_number_check"] = run_serial_check(images)
+    report["serial_number_check"] = run_company_serial_check(images)
 
     failures = [
         v for v in report.values()
